@@ -16,4 +16,12 @@ foreach (var item in objResponse)
     System.Console.WriteLine($"UserID: {item.UserID} - ID: {item.Id} - Título: {item.Title} - Completada: {item.Completed}\n");    
 }
 
-string path = @"C:\Users\jose\Escritorio\cosas facet\Taller de Lenguaje1\2026\tl1-tp10-2026-Joseado381\Tareas\";
+static void mostrarTareas(List<Tareas> tareas)
+{
+    foreach (var item in tareas)
+    {
+        System.Console.WriteLine(item.mostrarTareas());
+    }
+}
+
+mostrarTareas(objResponse);
